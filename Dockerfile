@@ -37,4 +37,4 @@ WORKDIR /data
 
 # EXPOSE 6379
 # CMD [ "redis-server" ]
-https://github.com/docker-library/redis/blob/5d3e1e5ff708d038527c719d52f3e87f1970d721/3.2/alpine/docker-entrypoint.sh
+# https://github.com/docker-library/redis/blob/5d3e1e5ff708d038527c719d52f3e87f1970d721/3.2/alpine/docker-entrypoint.sh
