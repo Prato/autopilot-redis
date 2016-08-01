@@ -1,4 +1,4 @@
-FROM prato/autopilot-base:next
+FROM prato/autopilot-base:0.1.9
 
 # add our user and group first to make sure their IDs get assigned consistently, regardless of whatever dependencies get added
 RUN addgroup -S redis && adduser -S -G redis redis
