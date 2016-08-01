@@ -1,4 +1,4 @@
-FROM prato/autopilot-base
+FROM prato/autopilot-base:next
 
 # add our user and group first to make sure their IDs get assigned consistently, regardless of whatever dependencies get added
 RUN addgroup -S redis && adduser -S -G redis redis
@@ -29,8 +29,8 @@ RUN set -x \
 	&& apk del .build-deps
 
 RUN mkdir /data && chown redis:redis /data
-VOLUME /data
-WORKDIR /data
+# VOLUME /data
+# WORKDIR /data
 
 # COPY docker-entrypoint.sh /usr/local/bin/
 # ENTRYPOINT ["docker-entrypoint.sh"]
